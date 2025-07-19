@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js"></script>
+    <style>
+        .content {
+            display: flex;
+            flex-direction: column;
+        }
+        #daily-json {
+            border-top: 1px solid #000;
+        }
+        #list-json，
+        #daily-json {
+            user-select: all;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="switch">
+            <input type="radio" name="reward" value="coin" checked onchange="radioChange(this)"/><label>Coin</label><br/>
+            <input type="radio" name="reward" value="packet" onchange="radioChange(this)"/><label>Packet</label>
+        </div>
+        <div id="list-json">
+            
+        </div>
+        <div id="daily-json">
+
+        </div>
+    </div>
+</body>
+</html>
